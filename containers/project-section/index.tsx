@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import byte from "@/public/images/byte.jpg";
-import gemini from "@/public/images/gemini.jpg";
+import gemini from "@/public/images/Gemini.jpg";
 import newtimes from "@/public/images/newtimes.jpg";
 import xiyu from "@/public/images/xiyu.jpg";
 
