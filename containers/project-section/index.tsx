@@ -5,10 +5,13 @@ import byte from "@/public/images/byte.jpg";
 import gemini from "@/public/images/Gemini.jpg";
 import newtimes from "@/public/images/newtimes.jpg";
 import xiyu from "@/public/images/xiyu.jpg";
+import { JOIN_US_SECTION } from "@/constants/global";
 
 const ProjectSection = () => {
   return (
-    <div className="p-10 flex flex-col gap-20">
+    <div
+      id={JOIN_US_SECTION}
+      className="p-10 flex flex-col gap-20">
       <div className="space-y-8 text-center flex flex-col items-center">
         <p className="font-medium text-xl">{`< Projects >`}</p>
         <h2 className="max-w-[466px] text-[40px] font-semibold">
@@ -20,8 +23,8 @@ const ProjectSection = () => {
       </div>
       <div className="grid grid-cols-2 gap-x-20 gap-y-10">
         <div className="space-y-8">
-            <Link href={"mobile"}> 
-          <div className="bg-red-200 h-[440px] relative rounded-[32px] overflow-hidden">
+          <Link href={"mobile"}>
+            <div className="bg-red-200 h-[440px] relative rounded-[32px] overflow-hidden">
               <Image
                 src={byte}
                 alt="Byte-Social Media Apps"
@@ -29,24 +32,25 @@ const ProjectSection = () => {
                 height={440}
                 className="w-full h-full object-cover"
               />
-            <div className="w-full flex gap-5 px-10 pb-10 absolute bottom-0 left-0 right-0">
-              <Link
-                href={"mobile"}
-                className="px-4 py-2  bg-white font-light text-xl rounded-full"
-              >
-                Mobile App
-              </Link>
+              <div className="w-full flex gap-5 px-10 pb-10 absolute bottom-0 left-0 right-0">
+                <Link
+                  href={"mobile"}
+                  className="px-4 py-2  bg-white font-light text-xl rounded-full">
+                  Mobile App
+                </Link>
+              </div>
             </div>
-          </div>
           </Link>
 
-            <Link href={"mobile"} className="font-medium text-[40px] block">
-              Byte - Social Media App{" "}
-            </Link>
+          <Link
+            href={"mobile"}
+            className="font-medium text-[40px] block">
+            Byte - Social Media App{" "}
+          </Link>
         </div>
         <div className="space-y-8">
-            <Link href={"mobile"}>
-          <div className="bg-red-200 h-[440px] relative rounded-[32px] overflow-hidden">
+          <Link href={"mobile"}>
+            <div className="bg-red-200 h-[440px] relative rounded-[32px] overflow-hidden">
               <Image
                 src={newtimes}
                 alt="New Times - News Mobile App"
@@ -54,24 +58,24 @@ const ProjectSection = () => {
                 height={440}
                 className="w-full h-full object-cover"
               />
-            <div className="w-full flex gap-5 px-10 pb-10 absolute bottom-0 left-0 right-0">
-              <Link
-                href={"mobile"}
-                className="px-4 py-2  bg-white font-light text-xl rounded-full"
-              >
-                Mobile App
-              </Link>
-              <Link
-                href={"mobile"}
-                className="px-4 py-2  bg-white font-light text-xl rounded-full"
-              >
-                UI/UX
-              </Link>
+              <div className="w-full flex gap-5 px-10 pb-10 absolute bottom-0 left-0 right-0">
+                <Link
+                  href={"mobile"}
+                  className="px-4 py-2  bg-white font-light text-xl rounded-full">
+                  Mobile App
+                </Link>
+                <Link
+                  href={"mobile"}
+                  className="px-4 py-2  bg-white font-light text-xl rounded-full">
+                  UI/UX
+                </Link>
+              </div>
             </div>
-          </div>
           </Link>
 
-          <Link href={"mobile"} className="font-medium text-[40px] block">
+          <Link
+            href={"mobile"}
+            className="font-medium text-[40px] block">
             New Times - News Mobile App
           </Link>
         </div>
@@ -88,15 +92,16 @@ const ProjectSection = () => {
               <div className="w-full flex gap-5 px-10 pb-10 absolute bottom-0 left-0 right-0">
                 <Link
                   href={"mobile"}
-                  className="px-4 py-2  bg-white font-light text-xl rounded-full"
-                >
+                  className="px-4 py-2  bg-white font-light text-xl rounded-full">
                   Website
                 </Link>
               </div>
             </div>
           </Link>
 
-          <Link href={"mobile"} className="font-medium text-[40px] block">
+          <Link
+            href={"mobile"}
+            className="font-medium text-[40px] block">
             Gemini - Company Profile
           </Link>
         </div>
@@ -113,14 +118,15 @@ const ProjectSection = () => {
               <div className="w-full flex gap-5 px-10 pb-10 absolute bottom-0 left-0 right-0">
                 <Link
                   href={"XIyu"}
-                  className="px-4 py-2  bg-white font-light text-xl rounded-full"
-                >
+                  className="px-4 py-2  bg-white font-light text-xl rounded-full">
                   Mobile App
                 </Link>
               </div>
             </div>
           </Link>
-          <Link href={"mobile"} className="font-medium text-[40px] block">
+          <Link
+            href={"mobile"}
+            className="font-medium text-[40px] block">
             XiYu - Health Mobile App
           </Link>
         </div>
