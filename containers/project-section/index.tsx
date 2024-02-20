@@ -7,6 +7,7 @@ import gemini from "@/public/images/Gemini.jpg";
 import newtimes from "@/public/images/newtimes.jpg";
 import xiyu from "@/public/images/xiyu.jpg";
 import { useRouter } from "next/navigation";
+import ArrowRightIcon from "@/components/icons/ArrowRightIcon";
 
 const ProjectSection = () => {
   const router = useRouter();
@@ -17,8 +18,8 @@ const ProjectSection = () => {
         <h2 className="max-w-[466px] text-[32px] font-semibold">
           Building innovation is our passion
         </h2>
-        <button className="px-5 py-4 bg-black text-white text-xl font-medium rounded-full">
-          Explore all works
+        <button className="px-5 py-4 bg-black text-white text-xl font-medium rounded-full flex gap-2">
+        <span>Explore all works</span> <ArrowRightIcon fill="white" />
         </button>
       </div>
       <div className="grid grid-cols-2 gap-x-20 gap-y-10">
