@@ -9,7 +9,7 @@ import xiyu from "@/public/images/xiyu.jpg";
 import { useRouter } from "next/navigation";
 
 const ProjectSection = () => {
-  const router = useRouter;
+  const router = useRouter();
   return (
     <div className="p-10 flex flex-col gap-20">
       <div className="space-y-8 text-center flex flex-col items-center">
@@ -23,7 +23,11 @@ const ProjectSection = () => {
       </div>
       <div className="grid grid-cols-2 gap-x-20 gap-y-10">
         <div className="space-y-8">
-          <button onClick={() => router.push("/mobile")} className="block w-full">
+          <button
+            onClick={() => router.push("/mobile")}
+            className="block w-full"
+          >
+            {" "}
             <div className="bg-red-200 h-[440px] relative rounded-[32px] overflow-hidden">
               <Image
                 src={byte}
@@ -48,7 +52,11 @@ const ProjectSection = () => {
           </Link>
         </div>
         <div className="space-y-8">
-          <button onClick={() => router.push("/mobile")} className="block w-full">
+          <button
+            onClick={() => router.push("/mobile")}
+            className="block w-full"
+          >
+            {" "}
             <div className="bg-red-200 h-[440px] relative rounded-[32px] overflow-hidden">
               <Image
                 src={newtimes}
@@ -79,7 +87,11 @@ const ProjectSection = () => {
           </Link>
         </div>
         <div className="space-y-8">
-          <button onClick={() => router.push("/mobile")} className="block w-full">
+          <button
+            onClick={() => router.push("/mobile")}
+            className="block w-full"
+          >
+            {" "}
             <div className="bg-red-200 h-[440px] relative rounded-[32px] overflow-hidden">
               <Image
                 src={gemini}
@@ -104,7 +116,11 @@ const ProjectSection = () => {
           </Link>
         </div>
         <div className="space-y-8">
-          <button onClick={() => router.push("/mobile")} className="block w-full">
+          <button
+            onClick={() => router.push("/mobile")}
+            className="block w-full"
+          >
+            {" "}
             <div className="bg-red-200 h-[440px] relative rounded-[32px] overflow-hidden">
               <Image
                 src={xiyu}
