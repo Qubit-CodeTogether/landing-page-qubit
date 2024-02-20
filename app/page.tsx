@@ -6,8 +6,10 @@ import TestimonialSection from "@/containers/testimonial-section";
 import Image from "next/image";
 
 export default function Home() {
+  const items = ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4', 'Slide 5'];
+
   return (
-    <main className="flex min-h-screen flex-col ">
+    <main className="flex min-h-screen flex-col">
       <HeroSection />
 
       <AboutUsSection />
