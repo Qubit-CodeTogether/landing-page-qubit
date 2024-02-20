@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
@@ -6,24 +7,31 @@ import gemini from "@/public/images/Gemini.jpg";
 import newtimes from "@/public/images/newtimes.jpg";
 import xiyu from "@/public/images/xiyu.jpg";
 import { JOIN_US_SECTION } from "@/constants/global";
+import { useRouter } from "next/navigation";
+import ArrowRightIcon from "@/components/icons/ArrowRightIcon";
 
 const ProjectSection = () => {
+  const router = useRouter();
   return (
     <div
       id={JOIN_US_SECTION}
       className="p-10 flex flex-col gap-20">
       <div className="space-y-8 text-center flex flex-col items-center">
         <p className="font-medium text-xl">{`< Projects >`}</p>
-        <h2 className="max-w-[466px] text-[40px] font-semibold">
+        <h2 className="max-w-[466px] text-[32px] font-semibold">
           Building innovation is our passion
         </h2>
-        <button className="px-5 py-4 bg-black text-white text-xl font-medium rounded-full">
-          Explore all works
+        <button className="px-5 py-4 bg-black text-white text-xl font-medium rounded-full flex gap-2">
+          <span>Explore all works</span>{" "}
+          <ArrowRightIcon fill="white" />
         </button>
       </div>
       <div className="grid grid-cols-2 gap-x-20 gap-y-10">
         <div className="space-y-8">
-          <Link href={"mobile"}>
+          <button
+            onClick={() => router.push("/")}
+            className="block w-full">
+            {" "}
             <div className="bg-red-200 h-[440px] relative rounded-[32px] overflow-hidden">
               <Image
                 src={byte}
@@ -34,22 +42,24 @@ const ProjectSection = () => {
               />
               <div className="w-full flex gap-5 px-10 pb-10 absolute bottom-0 left-0 right-0">
                 <Link
-                  href={"mobile"}
+                  href={"/"}
                   className="px-4 py-2  bg-white font-light text-xl rounded-full">
                   Mobile App
                 </Link>
               </div>
             </div>
-          </Link>
-
+          </button>
           <Link
-            href={"mobile"}
-            className="font-medium text-[40px] block">
+            href={"/"}
+            className="font-medium text-[32px] block">
             Byte - Social Media App{" "}
           </Link>
         </div>
         <div className="space-y-8">
-          <Link href={"mobile"}>
+          <button
+            onClick={() => router.push("/")}
+            className="block w-full">
+            {" "}
             <div className="bg-red-200 h-[440px] relative rounded-[32px] overflow-hidden">
               <Image
                 src={newtimes}
@@ -60,27 +70,30 @@ const ProjectSection = () => {
               />
               <div className="w-full flex gap-5 px-10 pb-10 absolute bottom-0 left-0 right-0">
                 <Link
-                  href={"mobile"}
+                  href={"/"}
                   className="px-4 py-2  bg-white font-light text-xl rounded-full">
                   Mobile App
                 </Link>
                 <Link
-                  href={"mobile"}
+                  href={"/"}
                   className="px-4 py-2  bg-white font-light text-xl rounded-full">
                   UI/UX
                 </Link>
               </div>
             </div>
-          </Link>
+          </button>
 
           <Link
-            href={"mobile"}
-            className="font-medium text-[40px] block">
+            href={"/"}
+            className="font-medium text-[32px] block">
             New Times - News Mobile App
           </Link>
         </div>
         <div className="space-y-8">
-          <Link href={"mobile"}>
+          <button
+            onClick={() => router.push("/")}
+            className="block w-full">
+            {" "}
             <div className="bg-red-200 h-[440px] relative rounded-[32px] overflow-hidden">
               <Image
                 src={gemini}
@@ -91,22 +104,24 @@ const ProjectSection = () => {
               />
               <div className="w-full flex gap-5 px-10 pb-10 absolute bottom-0 left-0 right-0">
                 <Link
-                  href={"mobile"}
+                  href={"/"}
                   className="px-4 py-2  bg-white font-light text-xl rounded-full">
                   Website
                 </Link>
               </div>
             </div>
-          </Link>
-
+          </button>
           <Link
-            href={"mobile"}
-            className="font-medium text-[40px] block">
+            href={"/"}
+            className="font-medium text-[32px] block">
             Gemini - Company Profile
           </Link>
         </div>
         <div className="space-y-8">
-          <Link href={"mobile"}>
+          <button
+            onClick={() => router.push("/")}
+            className="block w-full">
+            {" "}
             <div className="bg-red-200 h-[440px] relative rounded-[32px] overflow-hidden">
               <Image
                 src={xiyu}
@@ -123,10 +138,10 @@ const ProjectSection = () => {
                 </Link>
               </div>
             </div>
-          </Link>
+          </button>
           <Link
-            href={"mobile"}
-            className="font-medium text-[40px] block">
+            href={"/"}
+            className="font-medium text-[32px] block">
             XiYu - Health Mobile App
           </Link>
         </div>

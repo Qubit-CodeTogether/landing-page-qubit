@@ -1,4 +1,5 @@
 import { ABOUT_US_SECTION } from "@/constants/global";
+import ArrowRightIcon from "@/components/icons/ArrowRightIcon";
 import React from "react";
 
 const AboutUsSection = () => {
@@ -22,8 +23,9 @@ const AboutUsSection = () => {
                 enthusiasts.
               </p>
             </div>
-            <button className="px-5 py-4 bg-black text-white text-xl font-medium rounded-full">
-              See More
+            <button className="px-5 py-4 bg-black text-white text-xl font-medium rounded-full flex gap-2">
+              <span>See More</span>{" "}
+              <ArrowRightIcon fill="white" />
             </button>
           </div>
           <div className="w-1/2 gap-10 flex">
