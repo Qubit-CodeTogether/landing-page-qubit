@@ -3,7 +3,6 @@ import HeroSection from "@/containers/hero-section";
 import JoinUsSection from "@/containers/joinus-section";
 import ProjectSection from "@/containers/project-section";
 import TestimonialSection from "@/containers/testimonial-section";
-import Image from "next/image";
 
 export default function Home() {
   const items = ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4', 'Slide 5'];

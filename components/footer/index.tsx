@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import logo from "@/public/images/logo.png";
 import Link from "next/link";
+
 const Footer = () => {
   return (
     <div className="p-10 bg-black space-y-10">
@@ -29,7 +30,9 @@ const Footer = () => {
           <Link href={"mailto:"}>qubit@gmail.com</Link>
         </div>
       </div>
-      <p className="text-white">Copyright © Qubit. All rights reserved. 2024</p>
+      <p className="text-white">
+        Copyright © Qubit. All rights reserved. 2024
+      </p>
     </div>
   );
 };
