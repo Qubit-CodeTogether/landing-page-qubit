@@ -17,7 +17,7 @@ const NavbarButton: React.FC<UserComponentProps> = ({
   children,
 }) => (
   <div
-    className={`bg-transparent border-solid border-[1px] rounded-[12px] py-[0.25rem] px-[1rem] border-white ${
+    className={`cursor-pointer bg-transparent border-solid border-[1px] rounded-[12px] py-[0.25rem] px-[1rem] border-white ${
       extras?.hidden
         ? "hidden opacity-0"
         : "visible opacity-100"
@@ -27,7 +27,7 @@ const NavbarButton: React.FC<UserComponentProps> = ({
 );
 
 const NavbarText = (props: any) => (
-  <p className="text-[1rem] text-center">
+  <p className="cursor-pointer text-[1rem] text-center">
     {props.children}
   </p>
 );
