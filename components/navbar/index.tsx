@@ -8,6 +8,7 @@ import {
   PROJECT_SECTION,
   TESTIMONIAL_SECTION,
 } from "@/constants/global";
+import { handleScrollGoTo } from "@/lib/utils/scrolling";
 
 interface NavbarButtonExtendedProps {
   hidden?: boolean;
@@ -23,14 +24,6 @@ interface NavbarButton {
   children?: React.ReactNode;
   onClick?: () => void;
 }
-
-const handleScrollGoTo = (arg: string) => {
-  document.getElementById(arg)?.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-    inline: "nearest",
-  });
-};
 
 const NavbarButton: React.FC<NavbarButton> = ({
   extended,
@@ -94,7 +87,7 @@ const Navbar = () => {
       <div className="cursor-pointer flex justify-start">
         <div
           onClick={() => handleScrollGoTo(HERO_SECTION)}
-          className="flex flex-row">
+          className="flex flex-row items-center">
           <Image
             height={logoProps.height}
             width={logoProps.width}

@@ -1,9 +1,10 @@
 import ArrowRightIcon from "@/components/icons/ArrowRightIcon";
 import Image from "next/image";
-import React from "react";
+import React, { Fragment } from "react";
 import cx from "classnames";
 import Marquee from "react-fast-marquee";
 import SnowFlakeIcon from "@/components/icons/SnowFlakeIcon";
+import { HERO_SECTION } from "@/constants/global";
 
 const HeroSection = () => {
   const services: string[] = [
@@ -14,8 +15,9 @@ const HeroSection = () => {
   ];
 
   return (
-    <>
+    <Fragment>
       <section
+        id={HERO_SECTION}
         className={cx(
           "w-full relative flex flex-col gap-8 items-center justify-center min-h-screen",
           "bg-[url('/images/hero-image.webp')] bg-cover bg-black text-white text-center",
@@ -28,17 +30,14 @@ const HeroSection = () => {
           height={41}
           alt="Code Bracket"
         />
-
         <h1 className="text-6xl font-semibold">
           Learning Together <br /> Coding Forever
         </h1>
-
         <p className="text-xl w-[843px]">
           Step into our vibrant community and immerse
           yourself in a world of innovation, collaboration,
           and growth.
         </p>
-
         <button
           className={cx(
             "flex items-center text-xl font-medium gap-2 border-2 bg-white text-black rounded-2xl p-5",
@@ -48,7 +47,6 @@ const HeroSection = () => {
           <span>Let's Code</span> <ArrowRightIcon />
         </button>
       </section>
-
       <Marquee className="text-7xl font-semibold h-[240px] bg-[#f4f4f4]">
         {services.map((service, index) => (
           <div
@@ -59,7 +57,7 @@ const HeroSection = () => {
           </div>
         ))}
       </Marquee>
-    </>
+    </Fragment>
   );
 };
 

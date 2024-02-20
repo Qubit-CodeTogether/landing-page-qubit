@@ -6,7 +6,7 @@ import byte from "@/public/images/byte.jpg";
 import gemini from "@/public/images/Gemini.jpg";
 import newtimes from "@/public/images/newtimes.jpg";
 import xiyu from "@/public/images/xiyu.jpg";
-import { JOIN_US_SECTION } from "@/constants/global";
+import { PROJECT_SECTION } from "@/constants/global";
 import { useRouter } from "next/navigation";
 import ArrowRightIcon from "@/components/icons/ArrowRightIcon";
 
@@ -14,7 +14,7 @@ const ProjectSection = () => {
   const router = useRouter();
   return (
     <div
-      id={JOIN_US_SECTION}
+      id={PROJECT_SECTION}
       className="p-10 flex flex-col gap-20">
       <div className="space-y-8 text-center flex flex-col items-center">
         <p className="font-medium text-xl">{`< Projects >`}</p>
