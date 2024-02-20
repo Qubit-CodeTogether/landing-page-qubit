@@ -73,9 +73,7 @@ const Navbar = () => {
         if (window.scrollY > 0) setScrolledProps(scrolled);
       }, 150);
     };
-
     window.addEventListener("scroll", handleNavbar);
-
     return () => {
       window.removeEventListener("scroll", handleNavbar);
     };
