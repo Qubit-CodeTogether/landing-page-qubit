@@ -6,20 +6,24 @@ import byte from "@/public/images/byte.jpg";
 import gemini from "@/public/images/Gemini.jpg";
 import newtimes from "@/public/images/newtimes.jpg";
 import xiyu from "@/public/images/xiyu.jpg";
+import { JOIN_US_SECTION } from "@/constants/global";
 import { useRouter } from "next/navigation";
 import ArrowRightIcon from "@/components/icons/ArrowRightIcon";
 
 const ProjectSection = () => {
   const router = useRouter();
   return (
-    <div className="p-10 flex flex-col gap-20">
+    <div
+      id={JOIN_US_SECTION}
+      className="p-10 flex flex-col gap-20">
       <div className="space-y-8 text-center flex flex-col items-center">
         <p className="font-medium text-xl">{`< Projects >`}</p>
         <h2 className="max-w-[466px] text-[32px] font-semibold">
           Building innovation is our passion
         </h2>
         <button className="px-5 py-4 bg-black text-white text-xl font-medium rounded-full flex gap-2">
-        <span>Explore all works</span> <ArrowRightIcon fill="white" />
+          <span>Explore all works</span>{" "}
+          <ArrowRightIcon fill="white" />
         </button>
       </div>
       <div className="grid grid-cols-2 gap-x-20 gap-y-10">
@@ -45,7 +49,6 @@ const ProjectSection = () => {
               </div>
             </div>
           </button>
-
           <Link
             href={"/"}
             className="font-medium text-[32px] block">
@@ -108,7 +111,6 @@ const ProjectSection = () => {
               </div>
             </div>
           </button>
-
           <Link
             href={"/"}
             className="font-medium text-[32px] block">
