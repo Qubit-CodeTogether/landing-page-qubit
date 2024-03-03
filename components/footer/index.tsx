@@ -29,11 +29,11 @@ const Footer = () => (
       </div>
       <div className="flex flex-col gap-4 text-white">
         <p className="font-bold">Email</p>
-        <Link href={"mailto:"}>qubit@gmail.com</Link>
+        <Link href={"mailto:"}>CubeIT@gmail.com</Link>
       </div>
     </div>
     <p className="text-white">
-      Copyright © Qubit. All rights reserved. 2024
+      Copyright ©Cube IT. All rights reserved. 2024
     </p>
   </div>
 );

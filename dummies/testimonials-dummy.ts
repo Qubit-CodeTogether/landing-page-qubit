@@ -13,7 +13,7 @@ export const testimonials: Testimonial[] = [
     role: "Web Developer",
     rate: 5,
     message:
-      "Qubit has been a game-changer for me! The supportive environment and wealth of resources have helped me level up my web development skills.",
+      "Cube IT has been a game-changer for me! The supportive environment and wealth of resources have helped me level up my web development skills.",
   },
   {
     name: "Sara Durtete",
@@ -21,7 +21,7 @@ export const testimonials: Testimonial[] = [
     role: "UI/UX Designer",
     rate: 5,
     message:
-      "Qubit has been a game-changer for me! The supportive environment and wealth of resources have helped me level up my web development skills.",
+      "Cube IT has been a game-changer for me! The supportive environment and wealth of resources have helped me level up my web development skills.",
   },
   {
     name: "Ujang",
@@ -29,7 +29,7 @@ export const testimonials: Testimonial[] = [
     role: "Mobile Developer",
     rate: 5,
     message:
-      "Qubit has been a game-changer for me! The supportive environment and wealth of resources have helped me level up my web development skills.",
+      "Cube IT has been a game-changer for me! The supportive environment and wealth of resources have helped me level up my web development skills.",
   },
   {
     name: "John Doe",
@@ -37,6 +37,6 @@ export const testimonials: Testimonial[] = [
     role: "Tech Lead",
     rate: 5,
     message:
-      "Qubit has been a game-changer for me! The supportive environment and wealth of resources have helped me level up my web development skills.",
+      "Cube IT has been a game-changer for me! The supportive environment and wealth of resources have helped me level up my web development skills.",
   },
 ];
