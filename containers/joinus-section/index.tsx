@@ -5,7 +5,7 @@ import React from "react";
 
 const JoinUsSection = () => (
   <div
-    id={JOIN_US_SECTION}
+    id={JOIN_US_SECTION}  
     className="flex flex-col gap-12 items-center justify-center py-[100px] text-center">
     <h1 className="text-[40px] font-medium text-[#151516]">
       We Code and Collaborate, <br /> Together We Elevate

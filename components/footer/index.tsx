@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import logo from "@/public/images/logo.png";
+import logo from "@/public/images/logo b&w big.png";
 import Link from "next/link";
 import { FOOTER_SECTION } from "../../constants/global.js";
 
@@ -15,9 +15,9 @@ const Footer = () => (
       <Image
         src={logo}
         alt="logo"
-        width={400}
-        height={400}
-        className="w-[225px] h-[149px]"
+        width={980}
+        height={980}
+        className="aspect-square w-auto h-auto max-w-[232px] max-h-[232px]"
       />
     </div>
     <div className="py-[73px] flex gap-[73px] border-y border-white">

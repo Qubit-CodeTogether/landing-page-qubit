@@ -5,7 +5,7 @@ import cx from "classnames";
 import Marquee from "react-fast-marquee";
 import SnowFlakeIcon from "@/components/icons/SnowFlakeIcon";
 import { HERO_SECTION } from "@/constants/global";
-
+import logo from "@/public/images/logo b&w big.png";
 const HeroSection = () => {
   const services: string[] = [
     "Web Development",
@@ -25,9 +25,9 @@ const HeroSection = () => {
           "after:absolute after:w-full after:h-screen after:-z-0 after:bg-[#151516] after:opacity-[80%]"
         )}>
         <Image
-          src={"/images/code.svg"}
-          width={62}
-          height={41}
+          src={logo}
+          width={60}
+          height={60}
           alt="Code Bracket"
         />
         <h1 className="text-6xl font-semibold">

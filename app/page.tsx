@@ -1,4 +1,5 @@
 import AboutUsSection from "@/containers/about-us-section";
+import FAQSection from "@/containers/faq";
 import HeroSection from "@/containers/hero-section";
 import JoinUsSection from "@/containers/joinus-section";
 import ProjectSection from "@/containers/project-section";
@@ -16,6 +17,7 @@ export default function Home() {
       <ProjectSection />
 
       <TestimonialSection />
+      <FAQSection />
 
       <JoinUsSection />
     </main>
