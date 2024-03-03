@@ -56,10 +56,11 @@ const ProjectSection = () => {
             Building innovation is <br /> our passion
           </h2>
           <button className="px-5 py-4 bg-black text-white text-xl font-medium rounded-full flex gap-2">
+            <div className="rotate-180">
             <ArrowRightIcon
               fill="white"
-              className="rotate-180"
             />
+            </div>
             <span>Explore all works</span>{" "}
           </button>
         </div>
