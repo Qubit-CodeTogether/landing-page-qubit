@@ -15,11 +15,11 @@ const HeroSection = () => {
   ];
 
   return (
-    <Fragment>
+    <div>
       <section
         id={HERO_SECTION}
         className={cx(
-          "w-full relative flex flex-col gap-8 items-center justify-center min-h-screen",
+          "w-full relative flex px-5 md:px-0 flex-col gap-6 md:gap-8 items-center justify-center min-h-screen",
           "bg-[url('/images/hero-image.webp')] bg-cover bg-black text-white text-center",
           "*:relative *:z-10",
           "after:absolute after:w-full after:h-screen after:-z-0 after:bg-[#151516] after:opacity-[80%]"
@@ -30,17 +30,18 @@ const HeroSection = () => {
           height={60}
           alt="Code Bracket"
         />
-        <h1 className="text-6xl font-semibold">
-          Learning Together <br /> Coding Forever
+        <h1 className="text-[36px] md:text-6xl font-semibold text-center">
+          Small Coder’s Make
+          <br /> Something Bigger
         </h1>
-        <p className="text-xl w-[843px]">
+        <p className="text-base md:text-xl max-w-[843px]">
           Step into our vibrant community and immerse
           yourself in a world of innovation, collaboration,
           and growth.
         </p>
         <button
           className={cx(
-            "flex items-center text-xl font-medium gap-2 border-2 bg-white text-black rounded-2xl p-5",
+            "flex items-center text-xl font-medium gap-2 border-2 bg-white text-black rounded-full md:rounded-2xl p-5",
             "transition-all duration-300 ease-linear",
             "hover:bg-opacity-60 hover:border-white hover:border-opacity-100"
           )}>
@@ -57,7 +58,7 @@ const HeroSection = () => {
           </div>
         ))}
       </Marquee>
-    </Fragment>
+    </div>
   );
 };
 

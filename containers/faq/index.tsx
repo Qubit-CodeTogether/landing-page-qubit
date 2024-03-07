@@ -26,9 +26,9 @@ const FAQ = [
 
 export default function FAQSection() {
   return (
-    <div className="flex flex-col gap-10 items-center p-10">
-      <h2 className="font-semibold text-[40px] text-center">
-        Frequently Ask Questions <br /> (FAQ){" "}
+    <div className="flex flex-col gap-10 items-center p-5 md:p-10">
+      <h2 className="font-semibold text-[32px] md:text-[40px] text-center">
+        Frequently Ask Questions <br className="hidden md:block"/> (FAQ){" "}
       </h2>
       <div className="space-y-5">
         {FAQ.map((faq) => (

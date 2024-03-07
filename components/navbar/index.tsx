@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import logo from "@/public/images/logo b&w big.png";
+
 import {
   ABOUT_US_SECTION,
   HERO_SECTION,
@@ -9,6 +10,7 @@ import {
   TESTIMONIAL_SECTION,
 } from "@/constants/global";
 import { handleScrollGoTo } from "@/lib/utils/scrolling";
+import HamburgerMenu from "../icons/HamburgerMenu";
 
 interface NavbarButtonExtendedProps {
   hidden?: boolean;
@@ -81,7 +83,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`transition-all duration-500 z-50 fixed py-4 px-10 h-[80px] w-full flex flex-row justify-between items-cente text-white ${scrolledProps}`}>
+      className={`transition-all duration-500 z-50 fixed py-4 px-5 md:px-10 h-[80px] w-full flex flex-row justify-between items-cente text-white ${scrolledProps}`}>
       <div className="cursor-pointer flex justify-start">
         <div
           onClick={() => handleScrollGoTo(HERO_SECTION)}
@@ -96,7 +98,10 @@ const Navbar = () => {
           <NavbarText>Cube IT</NavbarText>
         </div>
       </div>
-      <div className="flex space-x-10 justify-end items-center">
+      <button className="md:hidden">
+        <HamburgerMenu />
+      </button>
+      <div className="hidden md:flex space-x-10 justify-end items-center">
         <NavbarText
           onClick={() =>
             handleScrollGoTo(ABOUT_US_SECTION)

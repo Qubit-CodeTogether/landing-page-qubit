@@ -4,25 +4,6 @@ import ChevronUpIcon from "@/components/icons/ChevronUpIcon";
 import ChevronDownIcon from "@/components/icons/ChevronDownIcon";
 import { useState } from "react";
 
-
-const FAQ = [
-  {
-    title : "Who can join Qube IT?",
-    content : "Qube IT is open to anyone passionate about technology, regardless of their level of expertise or background. Whether you're a seasoned professional or just starting out in your tech journey, ..."
-  },
-  {
-    title: "Is there a cost to join Qube IT?",
-    content : "Qube IT is open to anyone passionate about technology, regardless of their level of expertise or background. Whether you're a seasoned professional or just starting out in your tech journey, ..."
-  },
-  {
-    title: "How can I get involved in Qube IT projects?",
-    content : "Qube IT is open to anyone passionate about technology, regardless of their level of expertise or background. Whether you're a seasoned professional or just starting out in your tech journey, ..."
-  },
-  {
-    title: "I'm new to coding/technology. Is Qube IT suitable for me?",
-    content : "Qube IT is open to anyone passionate about technology, regardless of their level of expertise or background. Whether you're a seasoned professional or just starting out in your tech journey, ..."
-  }
-]
 export default function Collapse({
   title,
   content,
@@ -33,10 +14,10 @@ export default function Collapse({
   const [active, setActive] = useState(false);
   return (
     <button
-      className="flex flex-col gap-10  py-7 px-6 w-[784px] border rounded-md"
+      className="flex flex-col gap-10 px-5 py-7 md:px-6 w-full max-w-[784px] border rounded-md"
       onClick={() => setActive(!active)}>
-      <div className="flex justify-between w-full">
-        <p className="text-2xl">{title}</p>
+      <div className="flex justify-between w-full items-center">
+        <p className="text-base text-start md:text-2xl">{title}</p>
         <div className="">
           {active ? <ChevronUpIcon /> : 
           <ChevronDownIcon />}

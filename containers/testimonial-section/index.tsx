@@ -61,12 +61,12 @@ const TestimonialSection: React.FC = () => {
   return (
     <div
       id={TESTIMONIAL_SECTION}
-      className="flex flex-col px-[40px] mt-[100px] py-[40px]">
+      className="flex flex-col px-5 md:px-10 mt-[100px] py-[40px]">
       <h2 className="mb-8 text-2xl font-medium">
         {"< Testimonials >"}
       </h2>
-      <div className="flex w-full items-end justify-between">
-        <h1 className="font-semibold text-4xl">
+      <div className="flex flex-col lg:flex-row gap-[60px] w-full lg:items-end justify-between">
+        <h1 className="font-semibold text-[32px]">
           How is our members <br /> experience?
         </h1>
         <div className="flex gap-[60px]">
@@ -103,8 +103,8 @@ const TestimonialSection: React.FC = () => {
           ) => (
             <div
               key={index}
-              className="flex flex-col gap-10 w-1/2 px-8 flex-shrink-0">
-              <div className="flex gap-2 items-center">
+              className="flex flex-col gap-10 w-full md:w-1/2 px-0 md:px-8 flex-shrink-0">
+              <div className="flex gap-4 items-center">
                 <Image
                   alt="avatar"
                   src={`/images/${avatar}`}
@@ -132,7 +132,7 @@ const TestimonialSection: React.FC = () => {
                   )
                 )}
               </div>
-              <div className=" text-3xl text-[#444445]">
+              <div className="text-2xl md:text-3xl text-[#444445]">
                 {message}
               </div>
             </div>

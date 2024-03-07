@@ -7,9 +7,9 @@ import { FOOTER_SECTION } from "../../constants/global.js";
 const Footer = () => (
   <div
     id={FOOTER_SECTION}
-    className="p-10 bg-black space-y-10">
-    <div className="flex justify-between items-center">
-      <p className="text-[100px] font-extrabold text-white max-w-[430px] leading-none">
+    className="p-5 py-10 md:p-10 bg-black space-y-10 gap-5">
+    <div className="flex justify-between gap-5 flex-col md:flex-row md:items-center">
+      <p className="text-[80px] md:text-[100px] font-extrabold text-white max-w-[430px] leading-none">
         TIME TO CODE
       </p>
       <Image

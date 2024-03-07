@@ -13,8 +13,8 @@ const ChevronDownIcon: React.FC<{ fill?: string }> = ({
       fill={fill || "none"}
       xmlns="http://www.w3.org/2000/svg">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M22.9999 23.2188L6.31152 11.6095L9.02169 9.72412L22.9999 19.4481L36.9782 9.72412L39.6884 11.6095L22.9999 23.2188Z"
         fill="#151516"
       />
