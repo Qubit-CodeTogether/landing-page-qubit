@@ -152,7 +152,7 @@ const ProjectSection: React.FC = () => {
                     className="px-3 py-2 md:px-6 md:py-4 w-full text-sm flex items-center justify-between font-medium  bg-white lg:text-2xl rounded-full"
                     onClick={(e) => e.stopPropagation()}>
                     <span>{project.title}</span>
-                    <ArrowRightIcon fill="black" className="text-2xl" />
+                    <ArrowRightIcon fill="black"  />
                   </Link>
                 </div>
               </div>
